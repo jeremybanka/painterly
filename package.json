@@ -2,6 +2,8 @@
   "name": "painterly",
   "private": true,
   "scripts": {
+    "db:create": "prisma db push",
+    "db:migrate": "prisma migrate dev",
     "test": "jest --watch --no-coverage",
     "test:cov": "jest --watch",
     "test:once": "jest",
