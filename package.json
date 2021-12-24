@@ -1,23 +1,23 @@
 {
-  "name": "mothernode",
+  "name": "painterly",
   "private": true,
   "scripts": {
-    "start": "node dist/index.js",
     "test": "jest --watch --no-coverage",
     "test:cov": "jest --watch",
     "test:once": "jest",
     "prelint": "ls-lint",
     "lint": "eslint \"{src,test}/**/*.ts{,x}\"",
     "lint:fix": "yarn lint -- --fix",
-    "prebuild": "rm -rf dist",
-    "build": "tsc --project tsconfig.build.json",
-    "build:watch": "yarn build -- --watch"
+    "build": "remix build",
+    "dev": "remix dev",
+    "postinstall": "remix setup node",
+    "start": "remix-serve build"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-transform-typescript": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "@banka/eslint-config": "^1.0.0",
+    "@banka/eslint-config-react": "^1.0.0",
     "@ls-lint/ls-lint": "^1.10.0",
     "@remix-run/dev": "^1.0.5",
     "@types/faker": "^5.5.8",
@@ -27,6 +27,7 @@
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "babel-plugin-root-import": "^6.6.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
@@ -46,17 +47,27 @@
   },
   "eslintConfig": {
     "extends": [
-      "@banka"
+      "@banka/react"
     ],
     "parserOptions": {
       "project": "./tsconfig.json"
     }
   },
   "dependencies": {
+    "@emotion/cache": "^11.6.0",
+    "@emotion/react": "^11.7.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@react-hook/resize-observer": "^1.2.5",
     "@remix-run/react": "^1.0.5",
     "@remix-run/serve": "^1.0.5",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "framer-motion": "^5.3.3",
+    "luum": "../../node/luum",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "recoil": "^0.5.2",
     "remix": "^1.0.5"
   }
 }
