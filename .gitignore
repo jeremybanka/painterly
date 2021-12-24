@@ -2,4 +2,5 @@
 .env
 build
 coverage
+prisma/dev.db
 node_modules
