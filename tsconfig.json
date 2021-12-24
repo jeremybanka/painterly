@@ -1,32 +1,24 @@
 {
+  "include": [
+    "remix.env.d.ts",
+    "remix.config.js",
+    "jest.config.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "@app/*": ["*"],
-      "@test/*": ["../test/*"]
-    },
-    "declaration": true,
-    "declarationMap": true,
-    "emitDecoratorMetadata": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "incremental": false,
-    "lib": ["ES2021"],
-    "module": "CommonJS",
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "dist",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "strict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
     "target": "ES2019",
-    "typeRoots": ["node_modules/@types", "types"]
-  },
-  "include": ["src", "test", "jest.config.js", "babel.config.js"]
+    "strict": true,
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  }
 }
