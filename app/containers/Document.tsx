@@ -4,16 +4,9 @@ import { useState } from "react"
 
 import { Links, LiveReload, Meta, Scripts, ScrollRestoration } from "remix"
 
-import styled from "@emotion/styled"
 import { CMYK, mixNewSpec, specToHex } from "luum"
-import { RecoilRoot } from "recoil"
 
 import Announcer from "~/components/Announcer"
-import { useDarkMode } from "~/hooks/useMediaQuery"
-
-const Body = styled.body<{ hex: string }>(({ hex }) => ({
-  "--color-highlight": hex,
-}))
 
 const Document: FC<{ title?: string }> = ({ children, title }) => {
   const [bgColorSpec, setBgColorSpec] = useState({ hue: 0, sat: 50, lum: 0.95 })
