@@ -2,7 +2,7 @@ import { useEffect } from "react"
 
 import { atomFamily, useRecoilState } from "recoil"
 
-import { IS_SERVER } from "~/util/ssr"
+import { IS_SERVER } from "~/utils/ssr"
 
 const DARK_MODE_QUERY = `(prefers-color-scheme: dark)`
 
