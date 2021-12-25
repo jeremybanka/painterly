@@ -1,6 +1,9 @@
 {
   "name": "painterly",
   "private": true,
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "db:create": "prisma db push",
     "db:migrate": "prisma migrate dev",
@@ -30,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "babel-plugin-root-import": "^6.6.0",
+    "esbuild-register": "^3.2.1",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
