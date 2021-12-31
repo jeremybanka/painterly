@@ -5,12 +5,13 @@ import type { LinksFunction } from "remix"
 
 import { AnimatePresence } from "framer-motion"
 
-import Document from "./containers/Document"
-import Layout from "./containers/Layout"
 import darkStylesUrl from "~/styles/dark.css"
 import globalLgStylesUrl from "~/styles/global-lg.css"
 import globalMdStylesUrl from "~/styles/global-md.css"
 import globalStylesUrl from "~/styles/global.css"
+
+import Document from "./containers/Document"
+import Layout from "./containers/Layout"
 
 export const links: LinksFunction = () => {
   return [

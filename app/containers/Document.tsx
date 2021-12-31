@@ -1,6 +1,5 @@
 import type { FC } from "react"
-import { useEffect } from "react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import { Links, LiveReload, Meta, Scripts, ScrollRestoration } from "remix"
 
