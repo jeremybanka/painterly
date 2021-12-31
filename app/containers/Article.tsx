@@ -1,6 +1,15 @@
 import type { FC } from "react"
 
+import styled from "@emotion/styled"
+import { rounded } from "corners"
 import { motion } from "framer-motion"
+
+const RoundedThing = styled(rounded.div)`
+  background: var(--color-highlight);
+  color: var(--color-background);
+  padding: 20px;
+  height: 100px;
+`
 
 const Article: FC = ({ children }) => (
   <motion.article
@@ -10,6 +19,7 @@ const Article: FC = ({ children }) => (
     key="page"
   >
     {children}
+    <RoundedThing>yo</RoundedThing>
   </motion.article>
 )
 
