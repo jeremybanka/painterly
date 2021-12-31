@@ -5,8 +5,9 @@
   --color-links: hsl(213, 100%, 52%);
   --color-links-hover: hsl(213, 100%, 43%);
   --color-border: hsl(0, 0%, 82%);
-  --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
-    Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-body: "Uruz", -apple-system, "Segoe UI", Helvetica Neue, Helvetica,
+    Roboto, Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+  --uruz-regular: "wght" 134 "wdth" 100;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -14,6 +15,7 @@
 :root body {
   color: var(--color-foreground);
   font-family: var(--font-body);
+  font-variation-settings: "wght" 134;
   background-color: var(--color-highlight);
   min-width: 100vw;
   padding: 0;
@@ -92,22 +94,7 @@ input:where([type="search"]) {
   color: var(--color-foreground);
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.container {
-  --gutter: 16px;
-  width: 1024px;
-  max-width: calc(100% - var(--gutter) * 2);
-  margin-right: auto;
-  margin-left: auto;
+@font-face {
+  font-family: "Uruz";
+  src: url("/fonts/UruzVF.ttf") format("truetype");
 }
