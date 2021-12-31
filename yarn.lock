@@ -2666,10 +2666,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
-corners@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/corners/-/corners-0.0.2.tgz#1ec8dc2ebffbbb141f8411e9db4a46c312b423b1"
-  integrity sha512-L1GFc8iFeQC80dK/ub3peyx9AmaSdMVt41esvhQK1vlrQa3Sy5x5UQx0+huE9RAhv4cRiL+p9OsYXP3iGrSm2g==
+corners@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/corners/-/corners-0.0.3.tgz#7ba85ac6ddc5e374cd0b57c2e82db5721913577b"
+  integrity sha512-LuHJZmbeaaBPfrK4LuzWSCdGhzx/X9/aSbE72J8tfnEkPhxozPcSoNln9KbfBennka7FVamg9PiR/j5z3Gkvig==
   dependencies:
     "@react-hook/resize-observer" "^1.2.5"
 

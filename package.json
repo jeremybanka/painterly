@@ -69,7 +69,7 @@
     "@react-hook/resize-observer": "^1.2.5",
     "@remix-run/react": "^1.0.5",
     "@remix-run/serve": "^1.0.5",
-    "corners": "0.0.2",
+    "corners": "0.0.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "framer-motion": "^5.3.3",
