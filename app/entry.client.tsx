@@ -1,11 +1,11 @@
 import { RemixBrowser } from "remix"
 
-import { hydrate } from "react-dom"
+import { hydrateRoot } from "react-dom"
 import { RecoilRoot } from "recoil"
 
-hydrate(
+hydrateRoot(
+  document,
   <RecoilRoot>
     <RemixBrowser />
-  </RecoilRoot>,
-  document
+  </RecoilRoot>
 )
