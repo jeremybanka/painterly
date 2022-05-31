@@ -72,7 +72,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "framer-motion": "^5.3.3",
-    "luum": "../../node/luum",
+    "luum": "file:.yalc/luum",
     "react": "^18.0.0-rc.0-next-3dc41d8a2-20211223",
     "react-dom": "^18.0.0-rc.0-next-3dc41d8a2-20211223",
     "recoil": "^0.5.2",

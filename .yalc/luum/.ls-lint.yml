@@ -1,0 +1,28 @@
+ls:
+    .dir: camelCase | PascalCase
+    .js: camelCase | PascalCase
+    .json: camelCase
+    .ts: camelCase | PascalCase
+    .tsx: PascalCase
+    .test.ts: camelCase | PascalCase
+    .test.tsx: PascalCase
+    .d.ts: kebab-case
+    .config.js: camelCase
+    .config.ts: camelCase
+
+
+    
+ignore:
+    - .eslintrc.js
+    - .git
+    - .github
+    - .husky
+    - .idea
+    - .ls-lint.yml
+    - .nyc_output
+    - .vscode
+    - coverage
+    - dist
+    - docker
+    - node_modules
+    - tsconfig.build.json

@@ -1,0 +1,20 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.code-search": true,
+    "dist": true
+  },
+  "cSpell.words": [
+    "CMYK",
+    "desaturate",
+    "desaturates",
+    "esbuild",
+    "Hexcode",
+    "Luum",
+    "outfile",
+    "Parens",
+    "postbuild",
+    "prebuild",
+    "prelint"
+  ]
+}
